@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+.container {
+    margin: 40px auto;
+    padding: 50px;
+    width: 800px;
+    background-image: linear-gradient(rgba(255,0,0,0.1), rgba(255,0,0,0));
+}
+
+.info {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.info img {
+    width: 90%;
+}
+
+.station {
+    text-align: right;
+}
+
+.progress-container {
+    background-color: #666;
+    width: 100%;
+    height: 4px;
+    margin: 20px 0 5px 0;
+    cursor: pointer;
+}
+
+.progress {
+    position: relative;
+    background-color: #f00;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.progress-spot {
+    position: absolute;
+    right: -8px;
+    top: -3px;
+    background-color: #f00;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.time {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.buttons {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons button {
+    border: none;
+    background-color: transparent;
+}
+
+.actions {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#play-button-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#play-button {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#start-button, #backward-button, #forward-button {
+    width: 45px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#mute-button {
+    font-size: 1rem;
+    cursor: pointer;
+}
